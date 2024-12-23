@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "song.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "song.py"
+      }
+    ]
+  }
+  
